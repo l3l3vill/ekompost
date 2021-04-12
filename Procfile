@@ -1,0 +1,1 @@
+web: gunicorn ekompost_web.wsgi --log-file -
