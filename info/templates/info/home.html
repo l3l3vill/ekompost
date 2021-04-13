@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% load static %}
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>ekompost</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="{% static  'assets/img/favicon.ico' %}" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
+        type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="{% static 'css/styles.css' %}" rel="stylesheet" />
+</head>
+
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg bg-secondary fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">EKOMPOST</a>
+            <button class="navbar-toggler navbar-toggler-right font-weight-bold bg-primary text-white rounded"
+                type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
+                aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
+                            href="#portfolio">Idée</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
+                            href="#about">À propos de</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
+                            href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Masthead-->
+    <header class="masthead bg-primary text-white text-center">
+        <div class="container d-flex align-items-center flex-column">
+            <!-- Masthead Avatar Image-->
+            <img class="masthead-avatar mb-5" src="{% static 'assets/img/sustainable_white_250.png' %}" alt="" />
+            <!-- Masthead Heading-->
+            <h1 class="masthead-heading  mb-0">Let's re-feed the planet!</h1>
+            <!-- Icon Divider-->
+            <div class="divider-custom divider-light">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-leaf"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <!-- Masthead Subheading-->
+            <p class="masthead-subheading font-weight-light mb-0">tu manges - tu compostes - tu nourris la planète
+            </p>
+        </div>
+    </header>
+    <!-- Portfolio Section-->
+    <section class="page-section portfolio" id="portfolio">
+        <div class="container">
+            <!-- Portfolio Section Heading-->
+            <h2 class="page-section-heading text-center text-secondary mb-0">L'idée</h2>
+            <!-- Icon Divider-->
+            <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-leaf"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <!-- Portfolio Grid Items-->
+            <div class="row justify-content-center">
+                <!-- Portfolio Item 1-->
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><i
+                                    class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="{% static 'assets/img/eating.png' %}" alt="" />
+                    </div>
+                </div>
+                <!-- Portfolio Item 2-->
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><i
+                                    class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="{% static 'assets/img/compostable.png' %}" alt="" />
+                    </div>
+                </div>
+                <!-- Portfolio Item 3-->
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><i
+                                    class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" style="align-items: center;"
+                            src="{% static 'assets/img/planet-earth.png' %}" alt="" />
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- About Section-->
+    <section class="page-section bg-primary text-white mb-0" id="about">
+        <div class="container">
+            <!-- About Section Heading-->
+            <h2 class="page-section-heading text-center text-uppercase text-white">About</h2>
+            <!-- Icon Divider-->
+            <div class="divider-custom divider-light">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-leaf"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <!-- About Section Content-->
+            <div class="row">
+                <div class="col-lg-4 ml-auto">
+                    <p class="lead">Ekompost est une initiative qui vise à créer un outil qui facilite la participation
+                        de chaque ménage à l'économie circulaire à travers de la réutilisation de matières organiques.
+                        L'outil : une application web - mobile qui relie les personnes qui génèrent du compost et qui ne
+                        l'utilisent pas, avec les personnes qui en ont besoin.
+                        .</p>
+                </div>
+                <div class="col-lg-4 mr-auto">
+                    <p class="lead">Ekompost est composé de Géraldine Villamil, une Colombienne courageuse qui veut
+                        révolutionner le monde et passionnée pour faire quelque chose de transcendantal pour la planète.
+                    </p>
+                </div>
+            </div>
+            <!-- About Section Button-->
+            <div class="text-center mt-4">
+                <a class="btn btn-xl btn-outline-light" href="#">
+                    <i class="fas fa-play mr-2"></i>
+                    regardez moi !
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section-->
+    <section class="page-section" id="contact">
+        <div class="container">
+            <!-- Contact Section Heading-->
+            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Nous contacter</h2>
+            <!-- Icon Divider-->
+            <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-leaf"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <!-- Contact Section Form-->
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19.-->
+                    <form method="POST" action="#">
+                        {% csrf_token %}
+                        <div class="control-group">
+                            <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                                <label>Nom</label>
+                                <input class="form-control" id="Nom" type="text" placeholder="Name" required="required"
+                                    name="name" data-validation-required-message="Please enter your name." />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                                <label>Adresse e-mail</label>
+                                <input class="form-control" id="email" type="email" placeholder="Adresse e-mail"
+                                    required="required" name="email"
+                                    data-validation-required-message="Please enter your email address." />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                                <label>Numéro de téléphone</label>
+                                <input class="form-control" id="phone" type="tel" placeholder="Numéro de téléphone"
+                                    required="required" name="phone"
+                                    data-validation-required-message="Please enter your phone number." />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                                <label>Message</label>
+                                <textarea class="form-control" id="message" rows="5" placeholder="Message"
+                                    required="required" name="message"
+                                    data-validation-required-message="Please enter a message."></textarea>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <br />
+
+                        <div class="form-group"><button class="btn btn-primary btn-xl" id="sendMessageButton"
+                                type="submit">Envoyer</button></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer-->
+    <footer class="footer text-center">
+        <div class="container">
+            <div class="row">
+                <!-- Footer Location-->
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <h4 class="text-uppercase mb-4">Coordonées</h4>
+                    <p class="lead mb-0">
+                        Geraldine Villamil Guerrero
+                        <br />
+                        +33 767 04 26 29
+                        <br />
+                        lg.villamil.guerrero@gmail.com
+                    </p>
+                </div>
+                <!-- Footer Social Icons-->
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <h4 class="text-uppercase mb-4">Sur le Web</h4>
+                    <!--  <a class="btn btn-outline-light btn-social mx-1" href="#!"><i
+                            class="fab fa-fw fa-facebook-f"></i></a> -->
+                    <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/l3l3vill" target="_blank"
+                        rel="noopener noreferrer"><i class="fab fa-fw fa-github"></i></a>
+                    <a class="btn btn-outline-light btn-social mx-1"
+                        href="https://www.linkedin.com/in/lgvillamilguerrero/" target="_blank"
+                        rel="noopener noreferrer"><i class="fab fa-fw fa-linkedin-in"></i></a>
+                    <!--  <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-dribbble"></i></a> -->
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <!-- Copyright Section-->
+    <div class="copyright py-4 text-center text-white">
+        <div class="container"><small>Copyright © Ekompost.org 2021</small></div>
+    </div>
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes)-->
+    <div class="scroll-to-top d-lg-none position-fixed">
+        <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top"><i
+                class="fa fa-chevron-up"></i></a>
+    </div>
+    <!-- Portfolio Modals-->
+    <!-- Portfolio Modal 1-->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog"
+        aria-labelledby="portfolioModal1Label" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                </button>
+                <div class="modal-body text-center">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0"
+                                    id="portfolioModal1Label">Tu manges</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-leaf"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-5" style="text-align:left;">Manger c’est une des choses le plus génial, et
+                                    dans la culture française
+                                    c’est très important. <br>
+                                    Manger bien en tant de qualité des aliments est de plus en plus important. Dans les
+                                    alimentes bons pour la santé on peut trouver des
+                                    fruits, des légumes, des herbes aromatiques, des œufs, de produits de boulangerie,
+                                    des épissés, des huiles, du fromage, en fin, que de choses très bonnes qu’on mange
+                                    tous les jours.<br>
+                                    Les déchets organiques sont directement lies a cette consumation des aliments,
+                                    car il représente la partie des aliments qu’on ne mange pas.
+                                    En gros, selon l’informe Déchets chiffres-clés de 2019 de l’ADEME en France en 2017
+                                    chacun de nous a produit environ 83kg de déchet putrescibles par an. C’est le poids
+                                    d’une personne ! Mais heureusement, on peut faire quelque chose avec tout ca ! on
+                                    peut le convertir en compost.
+                                    <!--Mais c’est quoi le compost ?-->
+
+                                </p>
+                                <!-- Portfolio Modal - Image-->
+                                <img class="img-fluid rounded mb-5" src="{% static 'assets/img/vegetables_page.jpg' %}"
+                                    alt="" />
+                                <button class="btn btn-primary" data-dismiss="modal">
+                                    <i class="fas fa-times fa-fw"></i>
+                                    Close Window
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Modal 2-->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog"
+        aria-labelledby="portfolioModal2Label" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                </button>
+                <div class="modal-body text-center">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0"
+                                    id="portfolioModal2Label">Tu compostes</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-leaf"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+
+                                <!-- Portfolio Modal - Text-->
+                                <p style="text-align:left;">C’est quoi le compost ? Le compost c’est le
+                                    matériel résultant de
+                                    processus naturel de la décomposition des matières biodégradable. Ce matériel c’est
+                                    un engrais naturel qui nourri la planète car il augmente la fertilité du sol. <br>
+
+                                    Donc la recette parfaite pour le plat préfère de la planète es composée de les
+                                    matières biodégradables.<br>
+
+                                    Alors les Ingrédients :
+
+                                </p>
+                                <!--Portfolio Modal table-->
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" style="color: #778500;">Éléments verts</th>
+                                            <th scope="col" style="color: rgb(120, 63, 4);">Éléments marrons</th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td style="text-align:left;">Les restes d’aliments, les fruits pourris,
+                                                légumes, coquilles de fruits,
+                                                les noyaux, les pépins, les coques des fruits, légumes et fruit abimes,
+                                                restes de repas cuits ou crus.</td>
+                                            <td style="text-align:left;">Les feuilles mortes, les coquilles d'œufs
+                                                branches, les restes de café,
+                                                du thé, les filtres de papier, les sachets de thé ou tisane, les fleurs
+                                                fanées, les branchages </td>
+
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <!-- Portfolio Modal - Text-->
+                                <p style="text-align:left; color: red;">Attention !
+
+                                </p>
+
+                                <p style="text-align:left;">Pas de viande et pas de poisson, pas de mégots, pas de
+                                    bouchons de liège, pas d’emballages “biodégradables”, pas de capsules en métal, pas
+                                    de capsules en plastique
+
+                                </p>
+
+                                <!-- Portfolio Modal - Image-->
+                                <img class="img-fluid rounded mb-5" src="{% static 'assets/img/compost.jpeg' %}"
+                                    alt="" />
+
+                                <!-- Portfolio Modal - Text-->
+
+                                <p style="text-align:left;">Ces ingrédients, tu peux le trouver dans la
+                                    cuisine plus proche à toi
+                                    !<br>
+
+                                    Les propriétés nutritionnelles :<br>
+
+                                    La matière organique est riche en carbone et azote. Avec les bonnes conditions
+                                    d’humidité et l’aide des insectes surtout vers, cette matière organique se
+                                    transforme en humus riche en magnésium et calcium. <br>
+
+                                    Préparation :<br>
+
+                                    Pour faire de compost, il faut un composteur, ou on peut mélanger tous les
+                                    ingrédients.<br>
+                                <ol style="text-align:left;">
+                                    <li>Mettre dans le composteur une couche de végétaux humidifies,</li>
+                                    <li>ajouter les déchets organiques mentionnés</li>
+                                    <li>mélanger pour airer</li>
+                                    <li>ajouter un peu des matériels sec</li>
+                                    <li>ajouter l’au jusqu’à avoir une consistance pas très sec, pas très humide</li>
+                                    <li>et l’ingrédient spécial, ajouter de vers</li>
+                                </ol>
+
+                                Mais j’habite dans un appart ou je n’ai pas ou mettre le composteur !<br>
+
+                                Ne t’inquiète pas, on a une idée !!<br>
+
+                                </p>
+
+                                <button class="btn btn-primary" data-dismiss="modal">
+                                    <i class="fas fa-times fa-fw"></i>
+                                    Close Window
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Modal 3-->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog"
+        aria-labelledby="portfolioModal3Label" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                </button>
+                <div class="modal-body text-center">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0"
+                                    id="portfolioModal3Label">Tu nourris la planète</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-leaf"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-5" style="text-align:left;">
+
+                                    Après de collecter tous les ingrédients, le plat de compost n’est pas prêt, il faut
+                                    une préparation. Mais le plus important pour avoir de compost sont les ingrédients.
+                                    Et on en a beaucoup ! 83 kg par habitant par an ! <br>
+
+                                    Alors l’idée c’est de donner tous les déchets biodégradables a des personnes qui ont
+                                    besoin. Des voisins avec des grands jardins dans notre cartier, des entreprises avec
+                                    des espaces vers, des écoles et principalement a des agriculteurs ! Oui ! Les mêmes
+                                    personnes qui produit l’aliment que tu manges et qui après se transforme en
+                                    compost.<br>
+
+                                    C'est une belle cycle de vie et c’est partie de l’économie circulaire.<br>
+
+                                    Tu sais déjà comment ça fonctionne, il faut seulement que tu fais le trie et on va
+                                    trouver des personnes à qui donner !!<br>
+
+                                    Le plan c’est de chercher les personnes intéressées à prendre ton compost et faire
+                                    la coordination pour délivrer. Peut-être chez eux, dans un point commun ou les mêmes
+                                    lieux où tu achètes la nourriture : des marches, des supermarchés avec des produits
+                                    locaux… ce que soit plus facile pour toi !<br>
+
+                                    La planète nous a nourri, c’est le moment de faire conscience et la nourrir !
+
+                                </p>
+                                <!-- Portfolio Modal - Image-->
+                                <img class="img-fluid rounded mb-5" src=" {% static 'assets/img/feed_your_earth.jpg' %}"
+                                    alt="" />
+                                <button class="btn btn-primary" data-dismiss="modal">
+                                    <i class="fas fa-times fa-fw"></i>
+                                    Close Window
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Third party plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <!-- Contact form JS-->
+    <script src="{% static 'assets/mail/jqBootstrapValidation.js' %}"></script>
+    <script src="{% static 'assets/mail/contact_me.js' %}"></script>
+    <!-- Core theme JS-->
+    <script src="{% static 'js/scripts.js' %} "></script>
+</body>
+
+</html>
