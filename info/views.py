@@ -26,11 +26,11 @@ def home_view(request):
         contact.save()
         print('saveeeed')
 
-        send_mail(
+        """ send_mail(
             name, message, settings.EMAIL_HOST_USER, [
                 'greenprojectapp@gmail.com']
         )
-
+ """
         return HttpResponseRedirect(reverse('thanks_contact'))
     else:
         print('method not post')
