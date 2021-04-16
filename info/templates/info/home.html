@@ -3,6 +3,23 @@
 
 {% load static %}
 
+<style>
+    #iframe-container {
+        position: relative;
+        width: 100%;
+        padding-bottom: 56.25%;
+        height: 0;
+    }
+
+    #iframe-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+</style>
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -10,7 +27,7 @@
     <meta name="author" content="" />
     <title>ekompost</title>
     <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="{% static  'assets/images/favicon.ico' %}" />
+    <link rel="icon" type="image/x-icon" href="{% static  'assets/images/plant.png' %}" />
     <!-- Font Awesome icons (free version)-->
     <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
     <!-- Google fonts-->
@@ -99,10 +116,8 @@
 
                     <div class="card-body">
 
-                        <h6 class="card-text text-primary"> Ekompost est une initiative qui vise à créer un
-                            outil qui
-                            facilite la
-                            participation de chaque ménage à l'économie circulaire... </h6>
+                        <h6 class="card-text text-primary"> Ekompost est une initiative qui facilite la participation de
+                            chaque ménage à l'économie circulaire... </h6>
 
                     </div>
 
@@ -123,8 +138,8 @@
 
                     <div class="card-body">
 
-                        <h6 class="card-text text-primary"> ... à travers du trie et de la réutilisation de matières
-                            organiques qui peuvent être compostés. </h6>
+                        <h6 class="card-text text-primary"> ... à travers du tri et de la réutilisation de matières
+                            organiques qui peuvent être compostées. </h6>
 
                     </div>
 
@@ -145,8 +160,8 @@
                     <div class="card-body">
 
                         <h6 class="card-text text-primary"> L'outil : une application web - mobile qui relie les
-                            personnes qui génèrent du compost et qui ne
-                            l'utilisent pas, avec les personnes qui en ont besoin. </h6>
+                            personnes qui font les déchets organiques et les personnes qui en ont besoin pour le
+                            transformer en compost. </h6>
                     </div>
 
 
@@ -170,11 +185,11 @@
             <div class="row">
                 <div class="col-lg-6 ml-auto">
                     <p class="lead">
-                        Je suis Géraldine, je viens de Colombie et je suis une personne enthousiaste et motivée pour
-                        empreindre des projets qui révolutionnent le monde.
-                        Ekompost c’est une idée devenue après d’une réflexion pour essayer de réduire les déchets au
-                        minimum. “Le meilleur déchet est celui qu’on ne produit pas”, c’est la phrase qui m’a fait
-                        analyser ce que je jette a chaque fois. Je me suis rendu compte qu’on peut réutiliser la matière
+                        Géraldine, d’origine Colombeinne, je suis une personne enthousiaste et motivée pour
+                        entreprendre des projets qui révolutionnent le monde.
+                        Ekompost c'est le fruit d'une reflexion pour essayer de réduire les déchets au
+                        minimum. “Le meilleur déchet est celui qu’on ne produit pas”, - Cette phrase m'a fait analyser
+                        tout ce que jette à chaque fois. Je me suis rendu compte qu’on peut réutiliser la matière
                         organique pour produire la même nourriture qu’on mange.
 
                     </p>
@@ -182,13 +197,19 @@
                 <div class="col-lg-6 mr-auto">
                     <p class="lead">À travers Ekompost je veux faciliter la participation de tous à contribuer à cette
                         réutilisation.<br>
-                        Je suis comptable, avec une spécialisation en finances de l’entreprise qui a commencé à être
-                        curieuse pour le web et mobile développement. Je veux profiter de mes connaissances pour donner
-                        vie a Ekompost, cette idée qui puise améliorer les habitudes de chaque personne et ainsi
-                        améliorer le monde.
+                        Je suis comptable, avec une spécialisation en finances de l’entreprise. J’ai commencé à
+                        m’intéresser au web ainsi que le développement mobile. Je veux profiter de mes connaissances et
+                        de mon énergie pour donner vie a Ekompost, accompagner les personnes à améliorer leurs habitudes
+                        et rendre à la platnète le bien etre qu'elle nous apporte.
 
                     </p>
                 </div>
+            </div>
+            <div class="text-center mt-4" id="iframe-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/lSZCaY-0vPg"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
             </div>
             <!-- About Section Button video-->
             <!-- <div class="text-center mt-4">
@@ -350,7 +371,7 @@
                                     src="{% static 'assets/images/vegetables_page.jpg' %}" alt="" />
                                 <button class="btn btn-primary" data-dismiss="modal">
                                     <i class="fas fa-times fa-fw"></i>
-                                    Close Window
+                                    fermer
                                 </button>
                             </div>
                         </div>
@@ -463,7 +484,7 @@
 
                                 <button class="btn btn-primary" data-dismiss="modal">
                                     <i class="fas fa-times fa-fw"></i>
-                                    Close Window
+                                    fermer
                                 </button>
                             </div>
                         </div>
@@ -531,7 +552,7 @@
 
                                 <button class="btn btn-primary" data-dismiss="modal">
                                     <i class="fas fa-times fa-fw"></i>
-                                    Close Window
+                                    fermer
                                 </button>
                             </div>
                         </div>

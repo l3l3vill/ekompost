@@ -2,6 +2,7 @@ from django.shortcuts import render
 from .models import Contact
 from django.http import HttpResponseRedirect
 from django.urls import reverse
+from django.core.mail import send_mail
 
 # Create your views here.
 
@@ -23,6 +24,10 @@ def home_view(request):
 
         contact.save()
         print('saveeeed')
+
+        send_mail(
+            name, message, email, ['greenprojectapp@gmail.com']
+        )
 
         return HttpResponseRedirect(reverse('thanks_contact'))
     else:

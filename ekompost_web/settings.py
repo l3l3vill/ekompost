@@ -33,6 +33,11 @@ ALLOWED_HOSTS = [
     # '127.0.0.1'
 ]
 
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = '587'
+EMAIL_HOST_USER = 'greenprojectapp@gmail.com'
+EMAIL_HOST_PASSWORD = 'Cerebro@1234'
+EMAIL_USE_TLS = True
 
 # Application definition
 
