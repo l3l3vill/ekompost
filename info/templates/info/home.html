@@ -18,6 +18,12 @@
         width: 100%;
         height: 100%;
     }
+    
+    #images {
+        width: 200;
+        height: 150 ;
+        margin-left: 100px;
+    }
 </style>
 
 <head>
@@ -54,6 +60,8 @@
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
                             href="#portfolio">Idée</a></li>
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
+                            href="#solution">Solution</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
                             href="#about">À propos de</a></li>
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
                             href="#contact">Contact</a></li>
@@ -75,11 +83,14 @@
                 <div class="divider-custom-line"></div>
             </div>
             <!-- Masthead Subheading-->
-            <p class="masthead-subheading font-weight-light mb-0">tu manges - tu compostes - tu nourris la planète
+           <!--  <p class="masthead-subheading font-weight-light mb-0">nous mangeons - nous compostons - nous nourrissons la planète
             </p>
+             -->
+            <p class="masthead-subheading font-weight-light mb-3">Nous accompagnons les collectivités à réussir les objectifs concernant le tri de biodéchets qui la loi de Transition Énergétique et la loi Anti-Gaspillage imposent. </p> 
+            <p class="masthead-subheading font-weight-light mb-0">Et surtout nous sommes engagés avec l'environnement ! </p> 
         </div>
     </header>
-    <!-- Portfolio Section-->
+    <!-- idée Section-->
     <section class="page-section portfolio" id="portfolio">
         <div class="container">
             <!-- Portfolio Section Heading-->
@@ -116,8 +127,7 @@
 
                     <div class="card-body">
 
-                        <h6 class="card-text text-primary"> Ekompost est une initiative qui facilite la participation de
-                            chaque ménage à l'économie circulaire... </h6>
+                        <h6 class="card-text text-primary"> Ekompost est une initiative qui facilite la participation des citoyens à l'économie circulaire... </h6>
 
                     </div>
 
@@ -138,7 +148,7 @@
 
                     <div class="card-body">
 
-                        <h6 class="card-text text-primary"> ... à travers le tri et la réutilisation de matières
+                        <h6 class="card-text text-primary"> ... à travers le tri et la valorisation de matières
                             organiques qui peuvent être compostées. </h6>
 
                     </div>
@@ -159,23 +169,101 @@
 
                     <div class="card-body">
 
-                        <h6 class="card-text text-primary"> L'outil : le Tinder du recyclage, une application mobile -
-                            web qui relie les
-                            personnes qui produisent des déchets organiques et les personnes qui en ont besoin pour les
-                            transformer en compost. </h6>
+                        <h6 class="card-text text-primary"> La solution : à vélo, on va chercher les biodéchets avec l'aide d'une application mobile que facilite et garantis ça collecte porte à porte</h6>
                     </div>
-
+                    
+                    <!-- le Tinder du recyclage, une application mobile -
+                            qui relie les
+                            personnes qui produisent des déchets organiques et les personnes qui en ont besoin pour les
+                            transformer en compost. -->
 
                 </div>
 
             </div>
         </div>
+    </section >
+    
+    <!--Solution section-->
+    
+    <section  class="page-section bg-primary text-white mb-0" id="solution">
+        
+        <div class="container">
+            <!-- Portfolio Section Heading-->
+            <h2 class="page-section-heading text-center  mb-0">La Soluiton</h2>
+            <!-- Icon Divider-->
+            <div class="divider-custom divider-light">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-leaf"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <!-- Soluiion Grid Items-->
+            <div class="row justify-content-center">
+                <!-- Soluition map-->
+                
+                <div class="col-md-6 col-lg-3 mb-0">
+                    <div class="portfolio-item mx-auto" >
+                        <img class="img-fluid mb-3" src="{% static 'assets/images/login.png' %}" alt="" />
+                    </div>
+                    <div class="card-body">
+                        <h6 class="card-text text-white">Je m'inscris </h6>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-0">
+                    <div class="portfolio-item mx-auto" >
+                        <img class="img-fluid mb-3" src="{% static 'assets/images/carte.png' %}" alt="" />
+                    </div>
+                    <div class="card-body">
+                        <h6 class="card-text text-white"> Je regarde les horaires et zones de collecte</h6>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-0">
+                    <div class="portfolio-item mx-auto " >
+                        <img class="img-fluid mb-3" src="{% static 'assets/images/rdv.png' %}" alt="" />
+                    </div>
+                    <div class="card-body">
+                        <h6 class="card-text text-white">J’enregistre ma participation</h6>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-0">
+                    <div class="portfolio-item mx-auto" >
+                        <img class="img-fluid mb-3" src="{% static 'assets/images/conseils.png' %}" alt="" />
+                    </div>
+                    <div class="card-body">
+                        <h6 class="card-text text-white">Je m'informe pour bien faire le tri</h6>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-6 mb-0">
+                    <div class="portfolio-item mt-5" id="images" >
+                        <img class="img-fluid mb-3" src="{% static 'assets/images/bikea.png' %}" alt="" />
+                    </div>
+                    <div class="card-body">
+                        <h6 class="card-text text-white">Et après on vient chercher tes biodéchets à vélo...</h6>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 mb-0">
+                    <div class="portfolio-item mt-5" id="images" >
+                        <img class="img-fluid mb-3" src="{% static 'assets/images/composta.png' %}" alt="" />
+                    </div>
+                    <div class="card-body">
+                        <h6 class="card-text text-white">...pour apporter aux lieux de compostage partagés !</h6>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </div>
+        
     </section>
+        
+    
     <!-- About Section-->
-    <section class="page-section bg-primary text-white mb-0" id="about">
+    <section class="page-section" id="about">
         <div class="container">
             <!-- About Section Heading-->
-            <h2 class="page-section-heading text-center text-uppercase text-white">À propos de</h2>
+            <h2 class="page-section-heading text-center text-uppercase text-secondary">À propos de</h2>
             <!-- Icon Divider-->
             <div class="divider-custom divider-light">
                 <div class="divider-custom-line"></div>
@@ -185,7 +273,7 @@
             <!-- About Section Content-->
             <div class="row">
                 <div class="col-lg-6 ml-auto">
-                    <p class="lead">
+                    <p class="lead text-primary">
                         Géraldine, d’origine Colombienne, je suis une personne dynamique et motivée à l'idée
                         d' entreprendre des projets qui s'inscriveront dans le monde de demain.
                         Ekompost c'est le fruit d'une reflexion pour essayer de réduire le gaspillage au
@@ -197,7 +285,7 @@
                     </p>
                 </div>
                 <div class="col-lg-6 mr-auto">
-                    <p class="lead">À travers Ekompost je souhaite faciliter la participation de tous à contribuer à
+                    <p class="lead text-primary">À travers Ekompost je souhaite faciliter la participation de tous à contribuer à
                         cette
                         réutilisation.<br>
                         Je suis comptable, avec une spécialisation en finances de l’entreprise. J’ai commencé à
@@ -210,12 +298,12 @@
                     </p>
                 </div>
             </div>
-            <div class="text-center mt-4" id="iframe-container">
+            <!-- <div class="text-center mt-4" id="iframe-container">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/lSZCaY-0vPg"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
-            </div>
+            </div> -->
             <!-- About Section Button video-->
             <!-- <div class="text-center mt-4">
                 <a class="btn btn-xl btn-outline-light" href="#">
@@ -226,12 +314,12 @@
         </div>
     </section>
     <!-- Contact Section-->
-    <section class="page-section" id="contact">
+    <section class="page-section bg-primary text-white mb-0" id="contact">
         <div class="container">
             <!-- Contact Section Heading-->
-            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Nous contacter</h2>
+            <h2 class="page-section-heading text-center text-uppercase text-white mb-0">Nous contacter</h2>
             <!-- Icon Divider-->
-            <div class="divider-custom">
+            <div class="divider-custom divider-light">
                 <div class="divider-custom-line"></div>
                 <div class="divider-custom-icon"><i class="fas fa-leaf"></i></div>
                 <div class="divider-custom-line"></div>
@@ -242,10 +330,10 @@
                     <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19.-->
                     <form method="POST" action="#">
                         {% csrf_token %}
-                        <div class="control-group">
-                            <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                        <div class="control-group ">
+                            <div class="form-group floating-label-form-group  controls mb-0 pb-2">
                                 <label>Nom</label>
-                                <input class="form-control" id="Nom" type="text" placeholder="Name" required="required"
+                                <input class="form-control text-white" id="Nom" type="text" placeholder="Nom" required="required"
                                     name="name" data-validation-required-message="Please enter your name." />
                                 <p class="help-block text-danger"></p>
                             </div>
@@ -279,7 +367,7 @@
                         </div>
                         <br />
 
-                        <div class="form-group"><button class="btn btn-primary btn-xl" id="sendMessageButton"
+                        <div class="form-group"><button style="background-color: rgb(252, 252, 252);" class="btn btn-xl" id="sendMessageButton"
                                 type="submit">Envoyer</button></div>
                     </form>
                 </div>
@@ -287,13 +375,13 @@
         </div>
     </section>
     <!-- Footer-->
-    <footer class="footer text-center">
+    <footer class="footer text-center" style="background-color: rgb(255, 255, 255);">
         <div class="container">
             <div class="row">
                 <!-- Footer Location-->
                 <div class="col-lg-6 mb-5 mb-lg-0">
-                    <h4 class="text-uppercase mb-4">Coordonées</h4>
-                    <p class="lead mb-0">
+                    <h4 class="text-uppercase text-primary mb-4">Coordonées</h4>
+                    <p class="lead mb-0 text-primary">
                         Geraldine Villamil Guerrero
                         <br />
                         +33 767 04 26 29
@@ -306,12 +394,12 @@
                 </div>
                 <!-- Footer Social Icons-->
                 <div class="col-lg-6 mb-5 mb-lg-0">
-                    <h4 class="text-uppercase mb-4">Sur le Web</h4>
+                    <h4 class="text-uppercase mb-4 text-primary">Sur le Web</h4>
                     <!--  <a class="btn btn-outline-light btn-social mx-1" href="#!"><i
                             class="fab fa-fw fa-facebook-f"></i></a> -->
-                    <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/l3l3vill" target="_blank"
+                    <a class="btn btn-outline-light btn-social mx-1 text-primary" href="https://github.com/l3l3vill" target="_blank"
                         rel="noopener noreferrer"><i class="fab fa-fw fa-github"></i></a>
-                    <a class="btn btn-outline-light btn-social mx-1"
+                    <a class="btn btn-outline-light btn-social mx-1 text-primary"
                         href="https://www.linkedin.com/in/lgvillamilguerrero/" target="_blank"
                         rel="noopener noreferrer"><i class="fab fa-fw fa-linkedin-in"></i></a>
                     <!--  <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-dribbble"></i></a> -->
@@ -344,7 +432,7 @@
                             <div class="col-lg-8">
                                 <!-- Portfolio Modal - Title-->
                                 <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0"
-                                    id="portfolioModal1Label">Tu manges</h2>
+                                    id="portfolioModal1Label">Manger</h2>
                                 <!-- Icon Divider-->
                                 <div class="divider-custom">
                                     <div class="divider-custom-line"></div>
@@ -395,7 +483,7 @@
                             <div class="col-lg-8">
                                 <!-- Portfolio Modal - Title-->
                                 <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0"
-                                    id="portfolioModal2Label">Tu compostes</h2>
+                                    id="portfolioModal2Label">Trier</h2>
                                 <!-- Icon Divider-->
                                 <div class="divider-custom">
                                     <div class="divider-custom-line"></div>
@@ -512,41 +600,40 @@
                             <div class="col-lg-8">
                                 <!-- Portfolio Modal - Title-->
                                 <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0"
-                                    id="portfolioModal3Label">Tu nourris la planète</h2>
+                                    id="portfolioModal3Label">Composter !</h2>
                                 <!-- Icon Divider-->
                                 <div class="divider-custom">
                                     <div class="divider-custom-line"></div>
                                     <div class="divider-custom-icon"><i class="fas fa-leaf"></i></div>
                                     <div class="divider-custom-line"></div>
                                 </div>
+                                
+                                 <!-- Portfolio Modal - Image
+                                
+                                
+                                 <img class="img-fluid rounded mb-5"
+                                 src=" {% static 'assets/images/feed_your_earth.jpg' %}" alt="" /> -->
+                                
                                 <!-- Portfolio Modal - Text-->
+                                
                                 <p class="mb-5" style="text-align:left;">
-
-                                    Après avoir collecté tous les ingrédients, le plat de compost n’est pas terminé, il
-                                    faut
-                                    une préparation. <br>
-                                    L’idée c’est de récupérer un maximum de déchets biodégradables et de les distribuer
-                                    aux personnes qui en ont
-                                    besoin pour la préparation de leur compost : des voisins de notre quartier avec de
-                                    grands jardins
-                                    , des entreprises possédant des espaces vert mais surtout à nos chers agriculteurs !
-                                    Ces mêmes acteurs qui nous fournissent notre nourriture sont également à même de
-                                    composter nos restes !<br>
+                                    Après avoir trié tous les ingrédients, il faut les collecter pour faire Le Compost !
+                                     <br>
+                                     
+                                    L’objetive c’est de récupérer un maximum de déchets biodégradables de communes, de bailleux sociaux, de syndicats de copropriétaires, de foyer d’accueil, d'une association ou de collectif d’habitants, etc, et de les distribuer
+                                    aux composteurs de quartier pour valoriser les biodéchets !  <br>
                                     C'est un beau cycle de la vie ! <br>
 
                                 </p>
-                                <!-- Portfolio Modal - Image-->
-                                <img class="img-fluid rounded mb-5"
-                                    src=" {% static 'assets/images/feed_your_earth.jpg' %}" alt="" />
+                                
+                                 <!-- Portfolio Modal - Image-->
+                                 
+                                 <img class="img-fluid rounded mb-5" src=" {% static 'assets/images/eco_app.jpg' %}"
+                                 alt="" />
+
+                               
 
                                 <p class="mb-5" style="text-align:left;">
-
-                                    La coordination pour l'échange des ingrédients nécessaires au compost se ferait à
-                                    travers une
-                                    application web et mobile à travers laquelle nous mettrons en relation les profiles
-                                    d'utilisateurs en fonction de leur localisation, de leurs lieux de vies communs, les
-                                    marchés et commerces où ils font leurs courses, tout pour faciliter la participation
-                                    à l'économie circulaire... c'est un peu le Tinder du recyclage en fait !
 
                                     <br>
                                     La planète nous nourri, c’est le moment d'en prendre conscience et de la nourrir en
@@ -555,10 +642,7 @@
 
 
                                 </p>
-                                <!-- Portfolio Modal - Image-->
-                                <img class="img-fluid rounded mb-5" src=" {% static 'assets/images/eco_app.jpg' %}"
-                                    alt="" />
-
+                               
                                 <button class="btn btn-primary" data-dismiss="modal">
                                     <i class="fas fa-times fa-fw"></i>
                                     fermer

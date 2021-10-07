@@ -23,14 +23,14 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'y8o#*w1%p@rcc$$dhwx3i0j4jyk&$yp=a2%2kfp8jbg406axu6'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 #ALLOWED_HOSTS = ['ekompost.herokuapp.com',  '127.0.0.1']
 ALLOWED_HOSTS = [
     'ekompost.com',
     'www.ekompost.com',
     'ekompost.herokuapp.com',
-    # '127.0.0.1'
+    '127.0.0.1'
 ]
 
 EMAIL_HOST = 'smtp.gmail.com'
